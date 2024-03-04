@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretty:check": "npx prettier --check .",
+    "lint:check": "npx eslint .",
+    "pretty:fix": "npx prettier --write .",
+    "ci": "npx prettier --check . && npx eslint ."
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,7 @@
     "joi": "^17.12.2"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
     "prettier": "^3.2.5"
   }
 }
